@@ -223,49 +223,49 @@
 
 ///////////////////////////////////////////////
 
-// object methods
-const prashant = {
-  firstName: "Prashant",
-  lastName: "Mengane",
-  birthYear: 1999,
-  job: "Programmer",
-  friends: ["Michael", "Peter", "Steven"],
-  hasDriversLicense: true,
+// // object methods
+// const prashant = {
+//   firstName: "Prashant",
+//   lastName: "Mengane",
+//   birthYear: 1999,
+//   job: "Programmer",
+//   friends: ["Michael", "Peter", "Steven"],
+//   hasDriversLicense: true,
 
-  // calcAge: function (birthYear) {
-  //   return 2022 - birthYear;
-  // },
-  // using this keyword
-  // calcAge: function () {
-  //   console.log(this);
-  //   return 2022 - this.birthYear;
-  // },
-  ///////////////
-  calcAge: function () {
-    this.age = 2022 - this.birthYear;
-    return this.age;
-  },
-  // we can also do this for the challenge
-  getSummary: function () {
-    return `${prashant.firstName} is a ${prashant.calcAge()}-year old ${
-      prashant.job
-    } , and he has ${
-      prashant.hasDriversLicense ? "a" : "no"
-    } driver's license.`;
-  },
-};
+//   // calcAge: function (birthYear) {
+//   //   return 2022 - birthYear;
+//   // },
+//   // using this keyword
+//   // calcAge: function () {
+//   //   console.log(this);
+//   //   return 2022 - this.birthYear;
+//   // },
+//   ///////////////
+//   calcAge: function () {
+//     this.age = 2022 - this.birthYear;
+//     return this.age;
+//   },
+//   // we can also do this for the challenge
+//   getSummary: function () {
+//     return `${prashant.firstName} is a ${prashant.calcAge()}-year old ${
+//       prashant.job
+//     } , and he has ${
+//       prashant.hasDriversLicense ? "a" : "no"
+//     } driver's license.`;
+//   },
+// };
 
-console.log(prashant.calcAge());
-console.log(prashant.age);
-console.log(prashant.age);
-console.log(prashant.age);
+// console.log(prashant.calcAge());
+// console.log(prashant.age);
+// console.log(prashant.age);
+// console.log(prashant.age);
 
-// challenge
-console.log(prashant.getSummary());
+// // challenge
+// console.log(prashant.getSummary());
 
-// challenge
-// prashant is a 23-year old programmer , and he has a driver's license.
-const challenge = `${prashant.firstName} is a ${prashant.age}-year old ${
-  prashant.job
-} , and he has ${prashant.hasDriversLicense ? "a" : "no"} driver's license.`;
-console.log(challenge);
+// // challenge
+// // prashant is a 23-year old programmer , and he has a driver's license.
+// const challenge = `${prashant.firstName} is a ${prashant.age}-year old ${
+//   prashant.job
+// } , and he has ${prashant.hasDriversLicense ? "a" : "no"} driver's license.`;
+// console.log(challenge);
